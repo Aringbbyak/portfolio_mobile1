@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+/* reset */
+a { text-decoration: none; color: #333; }
+body {font: normal 14px/1.5em 'Noto Sans KR', sans-serif;}
+img { vertical-align: top; }
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 동적 그리드 */
+.box_block {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+    
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8, .block9, .block10, .block11, .block12 {
+    float: left;
+    margin-left: 2%;
+}
+    
+.box_block [class*="block"]:first-of-type {
+    margin-left: 0;
+}
+
+.block1 { width: 6.5%; } 
+.block2 { width: 15%; } 
+.block3 { width: 23.5%; } 
+.block4 { width: 32%; }
+.block5 { width: 40.5%; }
+.block6 { width: 49%; }
+.block7 { width: 57.5%; } 
+.block8 { width: 66%; } 
+.block9 { width: 74.5%; }
+.block10 { width: 83%; }
+.block11 { width: 91.5%; }
+.block12 { width: 100%; }
+
+/* header */
+.box {
+	padding: 20px 0;
+	text-align: center;
+	font-size: 24px;
+}
+
+.box a i {
+	color: #999;
+}
+
+.t_menu {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+.t_menu li {
+	float: left;
+	margin: 0 8px;
+	font-size: 13px;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.t_menu li a {
+	display: block;
+}
+
+/* main */
+.slide_wrap {
+	width: 100%;
+	max-height: 588px;
+	overflow: hidden;
+	max-width: 720px;
+}
+
+.main_slide {
+
+}
+
+.main_slide a {
+	float: left;
+}
+.main_slide a img {
+	width: 100%;
+}
+
+.icon_menu {
+	margin: 30px 0;
+}
+
+.icon_menu div i {
+	font-size: 40px;
+	display: block;
+	text-align: center;
+	color: #676867;
+}
+
+.icon_menu div a {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.recommend h2 {
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.recommend div {
+	margin-top: 10px;
+}
+
+.recommend div .item_pic1, .recommend div .item_pic2, .recommend div .item_pic3 {
+	width: 25vw;
+	height: 25vw;
+	background-color: #333;
+	margin-left: 20px;
+	border-radius: 15px;
+}
+
+.recommend div .item_pic1 {
+	background-image: url("../images/Mo_web_list_photobook_gradu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.recommend div .item_pic2 {
+	background-image: url("../images/Mo_web_main_baby@2x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.recommend div .item_pic3 {
+	background-image: url("../images/Mo_web_main_calendar@2x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.recommend div h4, .recommend div p {
+	margin-left: 20px;
+}
+
+.recommend div h4 {
+	margin-top: 10px;
+}
+
+.recommend div p span {
+	color: #666;
+}
+
+.new h2 {
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.new div {
+	margin-top: 10px;
+}
+
+.new div .n_item_pic1, .new div .n_item_pic2, .new div .n_item_pic3 {
+	width: 25vw;
+	height: 25vw;
+	background-color: #333;
+	margin-left: 20px;
+	border-radius: 15px;
+}
+
+.new div .n_item_pic1 {
+	background-image: url("../images/Mo_web_list_photobook_gradu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.new div .n_item_pic2 {
+	background-image: url("../images/Mo_web_main_baby@2x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.new div .n_item_pic3 {
+	background-image: url("../images/Mo_web_main_calendar@2x.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -16vw;
+}
+
+.new div h4, .new div p {
+	margin-left: 20px;
+}
+
+.new div h4 {
+	margin-top: 10px;
+}
+
+.new div p span {
+	color: #666;
+}
+
+.welcome {
+	margin-top: 40px;
+}
+
+/* bottom */
+#bottom_wrap {
+	/* margin-top: 40px; */
+	padding: 30px;
+	background-color: #f5f5f5;
+	color: #666;
+}
+
+.bottom h2 {
+	letter-spacing: 1px;
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.l_bottom em {
+	font-style: normal;
+	font-size: 25px;
+	color: #333;
+}
+
+.r_bottom em {
+	font-style: normal;
+	color: #333;
+}
+
+.sns {
+	text-align: center;
+	margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sns i {
+	margin: 0 5px;
+	font-size: 24px;
+	background-color: #666;
+	color: #f5f5f5;
+	display: block;
+	width: 40px;
+	height: 32px;
+    float: left;
+    border-radius: 20px;
+    padding-top: 8px;
+}
